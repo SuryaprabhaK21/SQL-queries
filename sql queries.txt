@@ -1,0 +1,129 @@
+CREATE SCHEMA `employee` ;
+
+CREATE TABLE `employee`.`programmer` (
+  `Name` VARCHAR(28) NOT NULL,
+  `DOB` DATE NOT NULL,
+  `DOJ` DATE NOT NULL,
+  `Sex` VARCHAR(1) NOT NULL,
+  `Language1` VARCHAR(8) NULL,
+  `Language2` VARCHAR(8) NULL,
+  `Salary` INT NOT NULL);
+
+ALTER TABLE `employee`.`programmer` 
+CHANGE COLUMN `Name` `SI.No` INT NOT NULL AUTO_INCREMENT ,
+CHANGE COLUMN `DOB` `Name` VARCHAR(28) NOT NULL ,
+CHANGE COLUMN `DOJ` `DOB` DATE NOT NULL ,
+CHANGE COLUMN `Sex` `DOJ` DATE NOT NULL ,
+CHANGE COLUMN `Language1` `Sex` VARCHAR(1) NULL DEFAULT NULL ,
+CHANGE COLUMN `Language2` `Language1` VARCHAR(8) NULL DEFAULT NULL ,
+CHANGE COLUMN `Salary` `Language2` VARCHAR(8) NOT NULL ,
+ADD PRIMARY KEY (`SI.No`);
+;
+
+ALTER TABLE `employee`.`programmer` 
+CHANGE COLUMN `SI.No` `SI.No` INT NOT NULL ;
+
+
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('1', 'Suryaprabha', '2001-05-21', '2022-31-03', 'F', 'C', 'Java');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('2', 'Monisha', '2001-05-03', '2022-03-07', 'F', 'Java', 'Pascal');
+
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('3', 'Hari', '2000-11-13', '2022-03-07', 'F', 'Basic', 'Pascal');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('4', 'Pranavi', '2000-10-25', '2022-04-02', 'F', 'Java', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('5', 'Oviya', '2001-08-04', '2022-02-01', 'F', 'Pascal', 'Basic');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('6', 'Saravanan', '2001-02-13', '2022-03-07', 'M', 'Java', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('7', 'Kavya', '2000-06-21', '2022-03-07', 'F', 'Pascal', 'Basic');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('8', 'Pavithra', '2001-05-16', '2022-03-07', 'F', 'Java', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('9', 'Dharanitha', '2000-04-11', '2022-03-07', 'F', 'C ', 'Pascal');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('10', 'Ravikumar', '2001-05-15', '2022-03-07', 'M', 'Java ', 'Basic');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('11', 'Jeeva', '2000-04-16', '2022-03-07', 'M', 'C', 'Java');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('12', 'Abijith', '2000-12-12', '2022-03-07', 'M', 'Basic', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('13', 'Akash', '2000-11-09', '2022-03-07', 'M', 'Pascal', 'Basic');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('14', 'Karthick', '2000-08-13', '2022-03-07', 'M', 'Java', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('15', 'Teenu priya', '2001-04-04', '2022-03-07', 'F', 'Pascal', 'Python');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('16', 'Keerthana', '2001-09-09', '2022-03-07', 'F', 'Python ', 'Java');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('17', 'Mithun', '2001-08-04', '2022-03-07', 'M', 'Pascal', 'C');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('18', 'Kavi prakash', '2001-06-06', '2022-03-07', 'M', 'Java', 'Pascal');
+INSERT INTO `employee`.`programmer` (`SI.No`, `Name`, `DOB`, `DOJ`, `Sex`, `Language1`, `Language2`) VALUES ('19', 'Yuvaraj', '2000-05-06', '2022-03-07', 'M', 'C', 'Basic');
+
+
+*********************************************************************************************
+
+CREATE TABLE `employee`.`software` (
+  `SI.No` INT NOT NULL,
+  `Name` VARCHAR(45) NOT NULL,
+  `Titile` VARCHAR(8) NOT NULL,
+  `Language developed` VARCHAR(8) NOT NULL,
+  `scost` INT NULL,
+  `dcost` INT NULL,
+  `sold` INT NULL);
+
+ALTER TABLE `employee`.`software` 
+ADD PRIMARY KEY (`SI.No`);
+;
+
+ALTER TABLE `employee`.`software` 
+CHANGE COLUMN `Titile` `Titile` VARCHAR(100) NOT NULL ;
+
+ALTER TABLE `employee`.`software` 
+CHANGE COLUMN `SI.No` `SI.No` INT NOT NULL ;
+
+ALTER TABLE `employee`.`software` 
+CHANGE COLUMN `SI.No` `SI.No` INT NOT NULL ;
+
+ALTER TABLE `employee`.`software` 
+CHANGE COLUMN `Language developed` `Dev_in` VARCHAR(8) NOT NULL ;
+
+
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('1', 'Suryaprabha', 'Calendar using C', 'C', '350.50', '5000', '40');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('2', 'Monisha', 'Customer Billing system', 'Basic', '450.00', '7000', '30');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('3', 'Hari', 'Bus Reservation system', 'Java', '700.50', '6500', '50');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('4', 'Pranavi', 'Snake Game', 'Python', '550.00', '4500', '23');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('5', 'Oviya', 'Bank Management System', 'Java', '550.00', '8000', '60');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('6', 'Saravanan', 'Diary management System', 'C', '870.50', '5500', '75');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('7', 'Kavya', 'Employee management System', 'Pascal', '650', '6700', '60');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('8', 'Pavithra', 'Airline reservation system', 'Java', '590', '8000', '13');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('9', 'Dharanitha', 'e-Healthcare management system', 'Basic', '900', '6700', '5');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('10', 'Ravikumar', 'Library management system', 'Python', '895.00', '9000', '50');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('11', 'Jeeva', 'Online medical management system', 'Basic', '730', '10000', '45');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('12', 'Abijith', 'Currency Converter', 'C', '645.00', '6500', '30');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('13', 'Akash', 'Password Generator', 'C', '860.00', '9000', '25');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('14', 'Karthick', 'Payment Billing Product Project', 'Python', '670.50', '6500', '80');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('15', 'Teenu priya', 'Baby Care Project', 'Python', '965.00', '8000', '37');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('16', 'Keerthana', 'Fee Management', 'Pascal', '1000.00', '6500', '65');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('17', 'Mithun', 'Exam System', 'Java', '675', '9000', '80');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('18', 'Kavi prakash', 'Online Quiz Project', 'Basic', '482', '4500', '55');
+INSERT INTO `employee`.`software` (`SI.No`, `Name`, `Titile`, `Language developed`, `scost`, `dcost`, `sold`) VALUES ('19', 'Yuvaraj', 'Online Survey System', 'Java', '770', '5500', '60');
+
+
+*********************************************************************************************
+CREATE TABLE `employee`.`studies` (
+  `SI.No` INT NOT NULL,
+  `Name` VARCHAR(8) NOT NULL,
+  `splace` VARCHAR(9) NOT NULL,
+  `course` VARCHAR(5) NOT NULL,
+  `ccost` VARCHAR(5) NOT NULL,
+  PRIMARY KEY (`SI.No`));
+
+ALTER TABLE `employee`.`studies` 
+CHANGE COLUMN `Name` `Name` VARCHAR(50) NOT NULL ;
+
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('1', 'Suryaprabha', 'SECE', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('2', 'Monisha', 'BDPS', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('3', 'Hari', 'Sabhari', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('4', 'Pranavi', 'BDPS', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('5', 'Oviya', 'SECE', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('6', 'Saravanan', 'SECE', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('7', 'Kavya', 'BDPS', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('8', 'Pavithra', 'Sabhari', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('9', 'Dharanitha', 'BDPS', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('10', 'Ravikumar', 'SECE', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('11', 'Jeeva', 'Sabhari', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('12', 'Abijith', 'Sabhari', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('13', 'Akash', 'BDPS', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('14', 'Karthick', 'BDPS', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('15', 'Teenu priya', 'SECE', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('16', 'Keerthana', 'Sabhari', 'DCS', '5000');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('17', 'Mithun', 'SECE', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('18', 'Kavi prakash', 'BDPS', 'PGDCA', '4500');
+INSERT INTO `employee`.`studies` (`SI.No`, `Name`, `splace`, `course`, `ccost`) VALUES ('19', 'Yuvaraj', 'BDPS', 'DCS', '5000');
+
